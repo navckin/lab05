@@ -12,10 +12,7 @@ jobs:
     script:
     - cmake -H. -B_build
     - cmake --build _build
-  - name: "each CMakeLists.txt"
-
-script:
-- source ./script
+  - 
 
 addons:
   apt:
