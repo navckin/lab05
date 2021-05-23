@@ -12,12 +12,14 @@ jobs:
     script:
     - cmake -H. -B_build
     - cmake --build _build
-  - 
+ 
 
 addons:
   apt:
     sources:
       - george-edison55-precise-backports
+      - ./script
+
     packages:
       - cmake
       - cmake-data
